@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Kami - VillaStay</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* Tambahan CSS agar link tetap terlihat rapi */
+    .link-text { text-decoration: none; color: inherit; }
+    .link-action { text-decoration: none; color: #25d366; font-weight: bold; }
+    .link-email { text-decoration: none; color: #ea4335; font-weight: bold; }
+
+    .contact-container { display: flex; gap: 50px; margin-top: 40px; flex-wrap: wrap; }
+    .contact-info { flex: 1; min-width: 300px; }
+    .contact-form-wrapper { flex: 1; min-width: 300px; background: #f9f9f9; padding: 30px; border-radius: 12px; border: 1px solid #eee; }
+    .form-group { margin-bottom: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .form-group label { font-weight: 600; color: #333; }
+    .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-family: inherit; }
+    .info-item { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+    .info-item i { font-size: 20px; color: #333; width: 30px; }
+  </style>
+</head>
+<script src="script.js"></script>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo"><span class="logo-circle"></span> VillaStay</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="villa.html">Villa</a></li>
+          <li><a href="fasilitas.html">Fasilitas</a></li>
+          <li><a href="destinasi.html">Destinasi</a></li>
+          <li><a href="tentang-kami.html">Tentang Kami</a></li>
+          <li><a href="kontak.html" class="active">Kontak</a></li>
+        </ul>
+      </nav>
+      <a href="booking.html" class="btn-pesan">Pesan Sekarang</a>
+    </div>
+  </header>
+
+  <section class="main-section" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
+    <div class="section-title" style="text-align: center; margin-bottom: 40px;">
+      <h2>Hubungi Kami</h2>
+      <p>Punya pertanyaan seputar fasilitas, lokasi, atau butuh bantuan pemesanan? Tim kami siap melayani Anda 24/7.</p>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <a href="index.html" class="link-text">
+          <h3 style="font-size: 24px; margin-bottom: 20px;">VillaStay Kantor Pusat</h3>
+          <p style="color: #666; line-height: 1.6; margin-bottom: 30px;">
+            Website booking villa modern dan terpercaya. Silakan hubungi kami melalui form atau kontak langsung di bawah ini untuk respon yang lebih cepat.
+          </p>
+        </a>
+        
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <strong>Telepon / WhatsApp</strong>
+            <p style="margin: 5px 0 0 0;"><a href="https://wa.me/6281234567890" target="_blank" class="link-action">0852-7057-3941</a></p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <strong>Email Resmi</strong>
+            <p style="margin: 5px 0 0 0;"><a href="mailto:info@villastay.com" class="link-email">info@villastay.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <form id="contactForm">
+          <div class="form-group">
+            <label>Nama Lengkap Anda</label>
+            <input type="text" id="contact-nama" placeholder="Masukkan nama lengkap" required>
+          </div>
+          <div class="form-group">
+            <label>Alamat Email Aktif</label>
+            <input type="email" placeholder="nama@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Subjek / Perihal Pesan</label>
+            <input type="text" placeholder="Contoh: Pertanyaan Fasilitas Villa" required>
+          </div>
+          <div class="form-group">
+            <label>Tuliskan pertanyaan atau pesan Anda di sini</label>
+            <textarea rows="5" placeholder="Ketik pesan Anda..." required></textarea>
+          </div>
+          <button type="submit" class="btn-pesan" style="width: 100%; padding: 15px; cursor: pointer;">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

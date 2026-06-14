@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Fasilitas VillaStay - Kenyamanan Maksimal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root { --primary: #2d3436; --accent: #0984e3; --bg: #f8f9fa; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); padding: 50px 20px; line-height: 1.6; }
+        
+        .container { max-width: 1000px; margin: auto; }
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-header h2 { font-size: 2.5rem; letter-spacing: -1px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .facility-card { 
+            background: white; padding: 40px; border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05);
+        }
+        .facility-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        
+        .icon-box { font-size: 2rem; color: var(--accent); margin-bottom: 20px; }
+        .facility-card h3 { font-size: 1.5rem; margin-bottom: 15px; }
+        
+        details { margin: 20px 0; padding: 10px; background: #f1f2f6; border-radius: 8px; }
+        summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+        
+        .btn-wifi { 
+            width: 100%; padding: 12px; background: var(--primary); color: white; 
+            border: none; border-radius: 8px; cursor: pointer; font-weight: 600; margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="section-header">
+        <h2>Fasilitas Premium</h2>
+        <p>Kami menyediakan fasilitas terbaik untuk memastikan pengalaman menginap Anda tak terlupakan.</p>
+    </div>
+
+    <div class="grid">
+        <article class="facility-card">
+            <div class="icon-box"><i class="fa-solid fa-wifi"></i></div>
+            <h3>High Speed WiFi</h3>
+            <p>Tetap terhubung dengan internet kecepatan tinggi di seluruh area villa.</p>
+            <details>
+                <summary>Detail Akses <span>+</span></summary>
+                <ul style="padding-left: 20px; font-size: 0.9rem;">
+                    <li>Dedicated 100 Mbps Line</li>
+                    <li>Coverage: Full Area & Pool</li>
+                    <li>Sistem Keamanan WPA3</li>
+                </ul>
+            </details>
+        </article>
+
+        <article class="facility-card">
+            <div class="icon-box"><i class="fa-solid fa-person-swimming"></i></div>
+            <h3>Private Pool</h3>
+            <p>Kolam renang pribadi dengan sistem filtrasi otomatis yang higienis.</p>
+            <details>
+                <summary>Spesifikasi <span>+</span></summary>
+                <ul style="padding-left: 20px; font-size: 0.9rem;">
+                    <li>Ukuran 4x8 Meter</li>
+                    <li>Kedalaman 1.2 - 1.5 Meter</li>
+                    <li>Pembersihan rutin setiap pagi</li>
+                </ul>
+            </details>
+        </article>
+
+        <article class="facility-card">
+            <div class="icon-box"><i class="fa-solid fa-kitchen-set"></i></div>
+            <h3>Full Kitchen</h3>
+            <p>Dapur modern dengan peralatan lengkap untuk chef rumahan.</p>
+            <details>
+                <summary>Kelengkapan <span>+</span></summary>
+                <ul style="padding-left: 20px; font-size: 0.9rem;">
+                    <li>Peralatan masak premium</li>
+                    <li>Kulkas & Microwave</li>
+                    <li>Coffee & Tea Station</li>
+                </ul>
+            </details>
+        </article>
+    </div>
+</div>
+
+<script>
+    function salinWifi() {
+        alert("Nama WiFi: VillaStay_Guest\nPassword: VillaStayPremium2026");
+    }
+</script>
+</body>
+</html>

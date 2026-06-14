@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pengembang - VillaStay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .profile-container { max-width: 800px; margin: 60px auto; padding: 20px; }
+        .profile-card { background: #fff; padding: 40px; border-radius: 12px; border: 1px solid #eaeaea; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .profile-header { text-align: center; margin-bottom: 30px; }
+        .profile-photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 3px solid #eee; }
+        .profile-info { margin-top: 20px; line-height: 1.8; }
+        .info-row { display: flex; margin-bottom: 12px; }
+        .info-row b { width: 180px; color: #333; }
+        .info-row span { color: #666; }
+        
+        /* Gaya tombol Kembali di bawah */
+        .back-btn-bottom { 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 8px; 
+            color: #fff; 
+            background-color: #222; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-size: 14px; 
+            font-weight: 600; 
+            margin-top: 30px; 
+            transition: 0.3s;
+        }
+        .back-btn-bottom:hover { background-color: #444; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo"><span class="logo-circle"></span> VillaStay</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="villa.html">Villa</a></li>
+                    <li><a href="profil.html" class="active">Profil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="profile-container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <img src="gambar/poto.jpeg" alt="Foto Profil" class="profile-photo">
+                <h1>Profil Pengembang</h1>
+            </div>
+
+            <div class="profile-info">
+                <div class="info-row"><b>Nama</b> <span>Surif Utami</span></div>
+                <div class="info-row"><b>Kelas</b> <span>SI 4G</span></div>
+                <div class="info-row"><b>Program Study</b> <span>Sistem Informasi</span></div>
+                <div class="info-row"><b>Kampus</b> <span>Universitas Royal</span></div>
+                <div class="info-row"><b>Mata Kuliah</b> <span>Interaksi Manusia dan Komputer</span></div>
+                <div class="info-row"><b>Dosen Pengampu</b> <span>Dewi Maharani, S.Kom., M.Kom.</span></div>
+            </div>
+
+            <div style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+                <h3>Tentang Website</h3>
+                <p>Website VillaStay ini dikembangkan untuk memberikan pengalaman reservasi villa yang intuitif dengan menerapkan prinsip-prinsip desain antarmuka yang berpusat pada pengguna.</p>
+            </div>
+
+            <a href="javascript:history.back()" class="back-btn-bottom">
+                <i class="fa-solid fa-arrow-left"></i> Kembali
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
